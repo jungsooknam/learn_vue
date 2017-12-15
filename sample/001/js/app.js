@@ -32,145 +32,82 @@ var About = { template: `
         </div>
         <div class="float-clear"></div>
     </div>
-
 ` }
-var Top10 = { template: `
-<div id="top-page">
-        <h3 class="top-t">TOP 10</h3>
-        <div class="top-content">
-            <h4> Here is a list of my 10 favorite books from 2023!</h4>
-            <div class="top-item">
-                <h3 class="top-num">01</h3>
-                <p class="top-title">Amber Eyed Leopard</p>
-                <p class="top-comment">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+
+var Top10 = {
+    template: `<div id="top-page">
+<h3 class="top-t">TOP 10</h3>
+<div class="top-content">
+<h4> Here is a list of my 10 favorite books from 2023!</h4>
+<todo-item></todo-item>
+<todo-item></todo-item>
+<todo-item></todo-item>
+<todo-item></todo-item>
+</div>
+</div>`
+}
+
+Vue.component('todo-item',{
+    template:`
+<div class="top-item">
+<h3 class="top-num">04</h3>
+<p class="top-title">Amber Eyed Leopard</p>
+<p class="top-comment">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+</div>`
+})
+
+
+Vue.component('blog-item',{
+    template:`
+    <div class="col s12 m7">
+        <div class="card horizontal card-panel hoverable">
+            <div class="card-image">
+                <img src="../img/2017121201.jpg">
             </div>
 
-            <div class="top-item">
-                <h3 class="top-num">02</h3>
-                <p class="top-title">Amber Eyed Leopard</p>
-                <p class="top-comment">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
-            </div>
+            <div class="card-stacked">
+                <div class="card-content">
 
-            <div class="top-item">
-                <h3 class="top-num">03</h3>
-                <p class="top-title">Amber Eyed Leopard</p>
-                <p class="top-comment">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
-            </div>
+                    <span><i class="material-icons right">more_vert</i></span>
 
-            <div class="top-item">
-                <h3 class="top-num">04</h3>
-                <p class="top-title">Amber Eyed Leopard</p>
-                <p class="top-comment">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                    <p>
+                    <div class="list-item-label user-img">
+                        <img class="circle responsive-img" src="../img/thumbnail1.png"/>
+                    </div>
+
+                    <div class="list-item-label user-text">
+                        <span>User Name </span>
+                        <span><i class="tiny material-icons">school</i></span><br/>
+                        <span>Nov 28 . 2 min</span>
+                    </div>
+
+                    </p>
+                    <p  class="card-title activator grey-text text-darken-4">8 Must-red books</p>
+                    <p>Creat a blog post subtitle that summarizes you post in few short, punchy sentences and..</p>
+
+                </div>
+                <div class="card-action">
+                    740 view Write a coumment
+
+                    <span><i class="material-icons right fa-bor">favorite_border</i></span>
+                </div>
             </div>
         </div>
     </div>
-`}
+`
+})
+
+
+
+
+//`}
 
 var ListItem = {
     template: `
     <div>
-    <div class="col s12 m7">
-    <div class="card horizontal card-panel hoverable">
-    <div class="card-image">
-    <img src="../img/1.jpg">
-    </div>
-    <div class="card-stacked">
-    <div class="card-content">
-    <span><i class="material-icons right">more_vert</i></span>
-    <p>
-    <div class="list-item-label user-img">
-    <img class="circle responsive-img" src="../img/thumbnail3.png"/>
-    </div>
-    <div class="list-item-label user-text">
-    <span>User Name </span>
-<span><i class="tiny material-icons">school</i></span><br/>
-    <span>Nov 28 . 2 min</span>
-</div>
-</p>
-<p  class="card-title activator grey-text text-darken-4">8 Must-red books</p>
-<p>Creat a blog post subtitle that summarizes you post in few short, punchy sentences and..</p>
-</div>
-<div class="card-action">740 view Write a coumment
-<span><i class="material-icons right fa-bor">favorite_border</i></span>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <div class="col s12 m7">
-                            <div class="card horizontal card-panel hoverable">
-                                <div class="card-image">
-                                    <img src="../img/2017121201.jpg">
-                                </div>
-
-                                <div class="card-stacked">
-                                    <div class="card-content">
-
-                                        <span><i class="material-icons right">more_vert</i></span>
-
-                                        <p>
-                                        <div class="list-item-label user-img">
-                                            <img class="circle responsive-img" src="../img/thumbnail1.png"/>
-                                        </div>
-
-                                        <div class="list-item-label user-text">
-                                            <span>User Name </span>
-                                            <span><i class="tiny material-icons">school</i></span><br/>
-                                            <span>Nov 28 . 2 min</span>
-                                        </div>
-
-                                        </p>
-                                        <p  class="card-title activator grey-text text-darken-4">8 Must-red books</p>
-                                        <p>Creat a blog post subtitle that summarizes you post in few short, punchy sentences and..</p>
-
-                                    </div>
-                                    <div class="card-action">
-                                        740 view Write a coumment
-
-                                        <span><i class="material-icons right fa-bor">favorite_border</i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col s12 m7">
-                            <div class="card horizontal card-panel hoverable">
-                                <div class="card-image">
-                                    <img src="../img/Mercedes-G-Class-1.jpg">
-                                </div>
-
-                                <div class="card-stacked">
-                                    <div class="card-content">
-
-                                        <span><i class="material-icons right">more_vert</i></span>
-
-                                        <p>
-                                        <div class="list-item-label user-img">
-                                            <img class="circle responsive-img" src="../img/thumbnail2.png"/>
-                                        </div>
-
-                                        <div class="list-item-label user-text">
-                                            <span>User Name </span>
-                                            <span><i class="tiny material-icons">school</i></span><br/>
-                                            <span>Nov 28 . 2 min</span>
-                                        </div>
-
-                                        </p>
-                                        <p  class="card-title activator grey-text text-darken-4">8 Must-red books</p>
-                                        <p>Creat a blog post subtitle that summarizes you post in few short, punchy sentences and..</p>
-
-                                    </div>
-                                    <div class="card-action">
-                                        740 view Write a coumment
-
-                                        <span><i class="material-icons right fa-bor">favorite_border</i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+    <blog-item></blog-item>
+    <blog-item></blog-item>
+    <blog-item></blog-item>
     <div>
     `
 }
@@ -186,48 +123,21 @@ var routes = [
         children: [
             { path: '', component: ListItem }
         ],
-        data:{
-            message:'abc',
-            message2:'aaaaaaaaaaa'
 
-        }
     },
     { path: '/about', component: About,
     },
-    { path: '/top10', component: Top10,
+    {   path: '/top10',
+        component: Top10,
+        data : {
+            todos:[
+                {text:'JavaScript 배우기'},
+                {text:'Vue 배우기'},
+                {text:'무언가 멋진 것을 배우기'}
+            ]
+        }
     }
 ]
-
-
-//var routes = [
-//    {
-//        path: '/login',
-//        component: Login,
-//        children: [
-//            { path: '', component: LoginForm }
-//        ]
-//    },
-//    {
-//        path: '/list',
-//        component: List,
-//        children: [
-//            { path: '', component: ListItems }
-//        ]
-//    },
-//
-//    {
-//        path: '/main',
-//        component: Main,
-//        children: [
-//            { path: '', component: MainContainer }
-//        ]<router-view></router-view>
-//    },
-//
-//    // 할일 #1
-//    // `/main` URL 에서 동작할 라우터를 하나 등록하고,
-//    // 해당 라우터에서 동작할 Main 컴포넌트와 하위 컴포넌트를 생성하여 등록합니다.
-//];
-
 
 // 3. Create the router instance and pass the `routes` option
 // You can pass in additional options here, but let's

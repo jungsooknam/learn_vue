@@ -1,0 +1,153 @@
+body{
+    background-color: lightgray;
+}
+
+.nav-wrapper ul li a{
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.circle.responsive-img{
+    width: 32px;
+    height: 32px;
+}
+
+.card .card-content {
+    padding-top: 10px;
+}
+.card-image img{
+    width:300px;
+    height:250px;
+}
+.nav-wrapper{
+    background-color: lightgray;
+    text-align: center;
+}
+
+.nav-wrapper ul{
+    margin-left: 42%;
+}
+.user-text .material-icons{
+    vertical-align: middle;
+    font-size: 18px;
+    color: black;
+}
+
+.nav-content{
+    height: 250px;
+    background-image: url('../../img/sample02.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    padding-top: 44px;
+}
+
+.list-item-label{
+    float: left;
+    margin-right: 10px;
+}
+
+.card-title{
+    clear: both;
+}
+
+.list-item-label.user-text{
+    margin-top: -5px;
+    color: gray;
+}
+
+i.fa-bor{
+    font-size: 20px;
+    color: #ee6e73;
+}
+
+.card-panel{
+    padding-bottom: 0;
+}
+
+.card-image{
+    margin: -24px 20px 0 -25px;
+}
+
+section{
+    width:950px;
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+
+section .sec-top {
+    background-color: white;
+    color: #ee6e73;
+    padding-bottom: 40px;
+}
+
+
+.sec-top-nav{
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.login.sec-top-nav{
+    border-color: #ee6e73;
+}
+
+
+#about-page{
+    width:950px;
+    /*background-color: white;*/
+    margin: 30px auto;
+    padding: 20px;
+}
+#top-page{
+    width:950px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#about-page h3{
+    color: #ee6e73;
+}
+
+.about-img img{
+    width: 480px;
+    height: 350px;
+    margin-right: 20px;
+}
+
+.about-text {
+    width: 400px;
+}
+.about-img, .about-text {
+    float: left;
+}
+
+.float-clear{
+    clear: both;
+}
+
+.top-content{
+    background-color: white;
+    width:950px;
+    padding: 10px 10px 20px 30px;
+}
+
+#top-page h3{
+    color: #ee6e73;
+}
+
+#top-page .top-num,.top-title ,.top-comment{
+    padding: 0;
+    margin: 0;
+}
+#top-page .top-title{
+    font-size: 24px;
+}
+
+#top-page .top-item{
+    margin-bottom: 30px;
+}
+
+

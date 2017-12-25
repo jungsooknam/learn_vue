@@ -3,9 +3,79 @@
   <head>
     <meta charset="utf-8">
     <title>v_1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+      body{
+        margin: 20px;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
+    <div id="app">
+      <div id="breadcrumbs"></div>
+      <div id="app-infor"></div>
+      <div id="device-opt"></div>
+      <div id="device-list"></div>
+    </div>
+
+    <script src="./dist/build.js"></script>
+
+    <button onclick="javascript:aaaa()"> dddd </button>
+    <script>
+
+
+      function aaaa(){
+        console.log(component1.A.message);
+        component1.A.message = "ddddd"
+      }
+
+      var components_opt = [
+        {
+          id:'breadcrumbs',
+          component:'Breadcrumbs',
+          data:['Home','Test Result','Device List']
+        },
+
+        {
+          id:'app-infor',
+          component:'AppInfor',
+          data:{
+            imgPath:'http://sample.bmaster.kro.kr/photos/61.jpg',
+            table_headers:[{key:'app', name:'App'},{key:'os_ver', name:'OS Ver'}, {key:'test_time', name:"Test Time"}, {key:'devices', name:"Devices"}, {key:'package_name', name:"Package Name"}, {key:'status', name:"Status"}],
+            table_datas:[{app:"PangYa2",os_ver:"0.5.12",test_time:"2017/12/21 17:44",devices:"3", package_name:"com.linecorp.LGPANGYAM",status:"Processing"}]
+          }
+        },
+
+        {
+          id:'device-opt',
+          component:'DeviceOpt',
+          data: {
+            Result: ["All", "Fail", "Pass"],
+            Resolution: ["All", "1080*1920", "1920*1080"],
+            Version: ["All", "5.1.1", "6.0", "7.0"],
+            Brand: ["All", "HTC", "HUAWEI", "SHARP"],
+            Status: ["All", "Finished", "Progress", "Waiting"],
+            Bug_Type: ["All", "Crash", "Install", "Launch", "Run", "Stuck", "Uninstall"]
+          }
+        },
+
+        {
+          id:'device-list',
+          component:'DeviceList',
+          data:['Alvin','Eclair','$0.87']
+        }
+
+      ];
+
+
+      var component1 = new nts.quaty.components('breadcrumbs', components_opt[0]);
+      var component2 = new nts.quaty.components('app-infor', components_opt[1]);
+      var component3 = new nts.quaty.components('device-opt', components_opt[2]);
+      var component4 = new nts.quaty.components('device-list', components_opt[3]);
+
+
+    </script>
   </body>
 </html>

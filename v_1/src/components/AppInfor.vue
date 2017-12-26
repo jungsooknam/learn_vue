@@ -55,7 +55,7 @@ img{
 }
 
 .ttttt{
-  width:800px;
+  width:calc(100% - 130px);
   float: left;
   margin-left: 20px;
 }
